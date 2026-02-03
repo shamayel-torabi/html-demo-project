@@ -1,0 +1,66 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --font-family: "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  --color-gray-0: hsl(210, 17%, 95%);
+  --color-gray-1: hsl(210, 10%, 65%);
+  --back-color: var(--color-gray-0);
+}
+
+html {
+  font-family: var(--font-family);
+}
+
+body {
+  background-color: var(--color-gray-0);
+  inline-size: min(75rem, 100%);
+  margin-inline: auto;
+  font-size: medium;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  background-color: var(--color-gray-1);
+  min-width: 40rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+[data-drop-target] {
+  height: 38rem;
+  width: 13rem;
+  margin: 0.5rem;
+  background-color: gainsboro;
+  box-shadow: inset;
+}
+
+.drag-enter {
+  border: 2px dashed #000;
+}
+
+.box {
+  width: 12rem;
+  height: 12rem;
+  margin: 0.5rem;
+}
+
+.red {
+  background-color: red;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.yellow {
+  background-color: yellow;
+}
