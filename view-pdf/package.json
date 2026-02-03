@@ -1,0 +1,17 @@
+{
+    "name": "view-pdf",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "lite-server"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+		"@mescius/dspdfviewer": "latest"	
+    },
+    "devDependencies": {
+        "lite-server": "2.4.0"
+    }
+}
