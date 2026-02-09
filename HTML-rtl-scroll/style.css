@@ -5,7 +5,7 @@ html {
 
 body {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   height: 100vh;
   margin: 0;
 }
@@ -13,4 +13,17 @@ body {
 .container {
   padding: 1rem;
   overflow-y: auto;
+  flex: auto;
+}
+
+.sidebar {
+  background-color: gray;
+
+  > nav {
+    inline-size: 16rem;
+
+    ul {
+      list-style: none;
+    }
+  }
 }
